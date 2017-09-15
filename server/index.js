@@ -1,10 +1,24 @@
 const express = require('express');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpack = require('webpack');
 const path = require('path');
 const body = require('body-parser');
+const webpackConfig = require('../webpack.config.js');
 const routes = require('../routes.js');
 const db = require('../db/index.js');
 
 const app = express();
+const compiler = webpack(webpackConfig);
+
+app.use(webpackDevMiddleware(compiler, {
+  hot: true,
+  filename: 'bundle.js',
+  publicPath: '/',
+  stats: {
+    colors: true,
+  },
+  historyApiFallback: true,
+}));
 
 app.use(body.json());
 

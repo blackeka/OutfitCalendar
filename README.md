@@ -32,7 +32,11 @@ The problem is keeping track what outfits the user wore recently, or which were 
 Calendar of every outfit/item the user adds along with a rating, to easily recall which outfits make the user confident.
 
 ## How to Get Started ##
-Simply start by entering what you wore that day and rate it based on compliments you got, or how confident you felt.
+<!-- Simply start by entering what you wore that day and rate it based on compliments you got, or how confident you felt. -->
+## Usage ##
+```
+npm start
+```
 
 ## Setup ##
 ```
