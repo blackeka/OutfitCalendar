@@ -9,21 +9,21 @@ routes.post('/', (req, res) => {
     if (err) {
       console.error(err);
     } else {
-      console.log(item);
       res.status(201).send(item);
     }
-
   });
-
 });
 
 
 routes.get('/', (req, res) => {
   
-  Outfit.find({}, function(err, item) {
-    if (err) 
+  Outfit.find({}, function(err, clothes) {
+    if (err) {
+      console.error(err);
+    } else {
+      res.status(200).send(clothes);
+    }
   });
-  res.send('processing outfit!')
 });
 
 module.exports = routes;
