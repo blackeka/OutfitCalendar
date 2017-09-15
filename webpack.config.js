@@ -1,19 +1,29 @@
 const webpack = require('webpack');
 const path = require('path');
 
-//represents the directory path of the vundle file output
-const BUILD_DIR = path.resolve(__dirname, 'public');
-//holds the directory path of the of the React app codebase
-const APP_DIR = path.resolve(__dirname, 'public');
-
-const = config = {
-  //specifies the entry file - starts bundling process
-  entry: APP_DIR + '/index.jsx',
-  //instructs what to do after the bundling
+module.exports = {
+  context: path.join(__dirname, 'public'),
+  entry: [
+    './index.jsx',
+  ],
   output: {
-    path: BUILD_DIR,
-    filename: 'bundle.js'
-  }
+    path: path.join(__dirname, 'www'),
+    filename: 'bundle.js',
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [
+          'babel-loader',
+        ],
+      },
+    ],
+  },
+  resolve: {
+    modules: [
+      path.join(__dirname, 'node_modules'),
+    ],
+  },
 };
-
-module.exports = config;

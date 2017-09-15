@@ -34,3 +34,14 @@ Calendar of every outfit/item the user adds along with a rating, to easily recal
 ## How to Get Started ##
 Simply start by entering what you wore that day and rate it based on compliments you got, or how confident you felt.
 
+## Setup ##
+```
+npm install
+```
+
+## Compile ##
+
+```
+npm run compile
+```
+
