@@ -36,7 +36,6 @@ Calendar of every outfit/item the user adds along with a rating, to easily recal
   ##> Describe how your product elegantly solves the problem.
 
 ## Quote from You ##
-
   ##> A quote from a spokesperson in your company.
 
 ## How to Get Started ##
@@ -44,7 +43,7 @@ Simply start by entering what you wore that day and rate it based on compliments
   ##> Describe how easy it is to get started.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  ##> Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  ##> Wrap it up and give pointers where the reader should go next.
