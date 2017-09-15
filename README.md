@@ -21,29 +21,16 @@ Outfit Calendar
 
 ## Sub-Heading ##
 Outfit Calendar is for anyone who wears clothes on a daily basis, a daily tracker for clothes.
-  ##> Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
 
 ## Summary ##
 Outfit Calendar allows users to track their outfit and rate them, recall when an outfit was last worn and if people liked it, or if the user was confident in a particular item. Items from the users closest will be listed along with the rating. Items are added on the day they are worn so they can be seen in the calendar view. Allowing the user to easily see what their power outfits are and what they feel most confident in.
-  ##> Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
 ## Problem ##
 The problem is keeping track what outfits the user wore recently, or which were best.
-  ##> Describe the problem your product solves.
 
 ## Solution ##
 Calendar of every outfit/item the user adds along with a rating, to easily recall which outfits make the user confident.
-  ##> Describe how your product elegantly solves the problem.
-
-## Quote from You ##
-  ##> A quote from a spokesperson in your company.
 
 ## How to Get Started ##
 Simply start by entering what you wore that day and rate it based on compliments you got, or how confident you felt.
-  ##> Describe how easy it is to get started.
 
-## Customer Quote ##
-  ##> Provide a quote from a hypothetical customer that describes how they experienced the benefit.
-
-## Closing and Call to Action ##
-  ##> Wrap it up and give pointers where the reader should go next.
