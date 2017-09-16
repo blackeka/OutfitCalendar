@@ -10,6 +10,11 @@ const db = require('../db/index.js');
 const app = express();
 const compiler = webpack(webpackConfig);
 
+app.use(body.json());
+app.use(express.static(path.join(__dirname, '../public'))); //can add /static later maybe _dirname
+
+app.use('/', routes);
+
 app.use(webpackDevMiddleware(compiler, {
   hot: true,
   filename: 'bundle.js',
@@ -19,11 +24,6 @@ app.use(webpackDevMiddleware(compiler, {
   },
   historyApiFallback: true,
 }));
-
-app.use(body.json());
-
-app.use(express.static(path.join(__dirname, 'public'))); //can add /static later maybe _dirname
-app.use('/', routes);
 
 app.listen(3000, () => {
   console.log(`Listening on port: 3000`);

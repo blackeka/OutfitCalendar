@@ -1,19 +1,19 @@
 const webpack = require('webpack');
 const path = require('path');
 
+const SRC_DIR = path.resolve(__dirname, 'public');
+const BUILD_DIR = path.resolve(__dirname, 'public/dist');
+
 module.exports = {
-  context: path.join(__dirname, 'public'),
-  entry: [
-    './index.jsx',
-  ],
+  entry: path.resolve(SRC_DIR, 'index.jsx'),
   output: {
-    path: path.join(__dirname, 'www'),
-    filename: 'bundle.js',
+    path: BUILD_DIR,
+    filename: 'bundle.js'
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
         exclude: /node_modules/,
         use: [
           'babel-loader',
