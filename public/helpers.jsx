@@ -1,21 +1,20 @@
 const axios = require('axios');
 
-const getCloset = () => {
-  axios.get('/closet')
-  .then((response) => {
-    console.log(response);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-}
-
+//CREATE
 const addItem = (item, rating) => {
-  console.log(item, rating, 'axios stuff')
-  return axios.post('/calendar', {
-    item,
-    rating
-  })
+  return axios.post('/calendar', {item, rating})
+    .then((response) => {
+      console.log(response);
+      return response;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+};
+
+//READ
+const getCloset = () => {
+  return axios.get('/closet')
   .then((response) => {
     console.log(response);
     return response;
@@ -23,12 +22,21 @@ const addItem = (item, rating) => {
   .catch((error) => {
     console.error(error);
   });
-};
+}
 
-const donateItem = (item) => {
-  axios.delete('/item', {
+//DELETE
+const donateItems = () => {
+  axios.delete('/closet', {params: {}})
+    .then((response) => {
+      return response;
+    })
+    .catch((error) => {
+      console.error(error);
+    })
 
-  })
+
 }
 
 module.exports.addItem = addItem;
+module.exports.getCloset = getCloset;
+module.exports.donateItems = donateItems;

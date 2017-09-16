@@ -1,10 +1,12 @@
 import React from 'react';
-// import helpers from './helpers.js';
+import helpers from './helpers.js';
+import Header from './header.jsx';
 
-class Closest extends React.Component {
+class Closet extends React.Component {
   render() {
     return (
-      helpers.getCloset();
+      <Header />
+
     )
   }
 }

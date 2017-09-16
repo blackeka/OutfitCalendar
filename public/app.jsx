@@ -2,21 +2,21 @@ import React from 'react';
 import Header from './header.jsx';
 import Form from './form.jsx';
 import Calendar from './calendar.jsx';
+import helpers from './helpers.jsx';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      today: new Date(),
-      lastWeek: null
-    } 
+  //click function for donate -- delete all clothes
+  donate() {
+    alert('hi')
+    helpers.donateItems();
   }
+
   render() {
     return (
       <div>
         <Header />
         <Form />
+        <button onClick={this.donate}>Donate</button>
         <Calendar />
       </div>
     )

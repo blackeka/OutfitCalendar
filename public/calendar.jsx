@@ -7,8 +7,7 @@ var lastWeek = new Date(today.getFullYear(), today.getMonth(), today.getDate() -
  
 // Render the Calendar 
 function Calendar (props) {
-  return (
-    <Header />,
+  return (  
     <InfiniteCalendar
       width={600}
       height={800}
