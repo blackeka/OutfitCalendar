@@ -23,7 +23,7 @@ Outfit Calendar
 Outfit Calendar is for anyone who wears clothes on a daily basis, a daily tracker for clothes.
 
 ## Summary ##
-Outfit Calendar allows users to track their outfit and rate them, recall when an outfit was last worn and if people liked it, or if the user was confident in a particular item. Items from the users closest will be listed along with the rating. Items are added on the day they are worn so they can be seen in the calendar view. Allowing the user to easily see what their power outfits are and what they feel most confident in.
+Outfit Calendar allows users to track their outfit and rate them, recall when an outfit was last worn and if people liked it, or if the user was confident in a particular item. Items from the users closet will be listed along with the rating. Items are added on the day they are worn so they can be seen in the calendar view. Allowing the user to easily see what their power outfits are and what they feel most confident in.
 
 ## Problem ##
 The problem is keeping track what outfits the user wore recently, or which were best.

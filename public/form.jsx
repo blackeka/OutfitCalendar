@@ -1,6 +1,6 @@
 import React from 'react';
 import StarRatingComponent from 'react-star-rating-component';
-// import helpers from './helpers.js';
+import helpers from './helpers.jsx';
 
 class Form extends React.Component {
   constructor(props) {
@@ -26,17 +26,16 @@ class Form extends React.Component {
 
   handleSubmit(e) {
     let item = this.state.item;
-    let rating = this.state.rating;
+    let rating = Number(this.state.rating);
     let save = confirm(`You rated ${item}: ${rating} stars`);
     if (save) {
       //post to database
-      // routes.post({item, rating});
+      helpers.addItem(item, rating);
     } 
     e.preventDefault();
   }
 
   render() {
-    const { rating } = this.state;
     return (
       <div className="input-form" onSubmit={this.handleSubmit}>
         <form action="">
@@ -47,7 +46,7 @@ class Form extends React.Component {
           <label className="rating">
             <StarRatingComponent
               name="Stars" 
-              value={rating} 
+              value={this.state.rating} 
               starCount={10} 
               onStarClick={this.onStarClick} 
               renderStarIcon={() => <span>☆</span>}        

@@ -10,15 +10,14 @@ class App extends React.Component {
     this.state = {
       today: new Date(),
       lastWeek: null
-    }
-  
+    } 
   }
   render() {
     return (
       <div>
         <Header />
         <Form />
-        <Calendar today={this.state.today} lastWeek={this.state.lastWeek}/>
+        <Calendar />
       </div>
     )
   }
