@@ -1,13 +1,6 @@
-.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-}
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
-}
-.rating > span:hover:before {
-   content: "\2605";
-   position: absolute;
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
