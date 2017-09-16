@@ -31765,7 +31765,6 @@ var Update = function (_React$Component) {
         old: '',
         newName: ''
       });
-      event.preventDefault();
     }
   }, {
     key: 'render',

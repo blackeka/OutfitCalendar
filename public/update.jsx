@@ -30,8 +30,8 @@ class Update extends React.Component {
     this.setState({
       old: '', 
       newName: ''
-    })
-    event.preventDefault();
+    });
+    
   }
 
   render() {
