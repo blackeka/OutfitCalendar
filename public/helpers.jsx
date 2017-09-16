@@ -15,13 +15,24 @@ const addItem = (item, rating) => {
 //READ
 const getCloset = () => {
   return axios.get('/closet')
-  .then((response) => {
-    console.log(response);
-    return response;
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+    .then((response) => {
+      console.log(response);
+      return response;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}
+
+//UPDATE
+const updateClothes = (old, newName) => {
+  return axios.put('/item', {old, newName})
+    .then((response) => {
+      return response;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 }
 
 //DELETE
@@ -33,10 +44,9 @@ const donateItems = () => {
     .catch((error) => {
       console.error(error);
     })
-
-
 }
 
 module.exports.addItem = addItem;
 module.exports.getCloset = getCloset;
 module.exports.donateItems = donateItems;
+module.exports.updateClothes = updateClothes;

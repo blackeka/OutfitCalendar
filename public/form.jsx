@@ -35,7 +35,10 @@ class Form extends React.Component {
     if (save) {
       //post to database
       helpers.addItem(item, rating);
-      // helpers.getCloset();
+      this.setState({
+        item: '',
+        rating: 0
+      })
     } 
     e.preventDefault();
   }
